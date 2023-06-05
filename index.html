@@ -41,43 +41,54 @@
 
             <div class="container-fluid d-flex">
 
-                <a class="navbar-brand flex-grow-0" href="#">
+                <a class="navbar-brand flex-grow-0 d-none d-lg-block" href="#">
 
                     <img src="./img/logo.svg" alt="LOGO" class="w-100">
 
                 </a>
 
-                
+                <a class="navbar-brand col-1 d-lg-none" href="#">
+
+                    <img src="./img/mobile-logo.png" alt="LOGO" class="mobile-logo w-100">
+
+                </a>
+
 
                 <div class="flex-grow-1">
 
                     <form role="search">
 
-                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
+                        <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
                 
                     </form>
 
                 </div>
 
                 <div class="ms-2 me-2">
-                    I
+
+                    <i class="fa-solid fa-list-check d-none d-lg-inline-block ps-lg-2 pe-lg-2"></i>
+
                 </div>
 
                 <div class="ms-2 me-2">
-                    I
+                    
+                    <i class="fa-solid fa-circle-question d-none d-lg-inline-block pe-lg-2"></i>
+
                 </div>
 
                 <div class="ms-2 me-2">
-                    I
+                    
+                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block pe-lg-2"></i>
+
                 </div>
 
-                <div class="nav-item dropdown flex-grow-0">
+                <div class="nav-item dropdown flex-lg-grow-0">
 
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    D
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell text-warning "></i>
                     </a>
 
-                    <ul class="dropdown-menu dropleft">
+                    <ul class="dropdown-menu">
 
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -98,29 +109,37 @@
 
             <!--ASIDE-->
 
-            <aside class="col-auto d-flex flex-column text-light pt-4 pb-4 ps-5 pe-5">
+            <aside class="col-auto d-flex flex-column text-light pt-4 pb-4 ps-4 pe-4">
 
                 <div>
 
-                    <h6>Home</h6>
+                    <span style="min-width: 1.25rem;"> <i class="fa-solid fa-house ms-sm-1 ms-lg-0"></i> </span>
+
+                    <h6 class="d-none d-lg-inline-block ms-lg-2 me-lg-3">Home</h6>
                     
                 </div>
     
                 <div>
 
-                    <h6>Stats</h6>
+                    <span style="min-width: 1.25rem;"><i class="fa-solid fa-chart-simple ms-sm-1 ms-lg-0"></i></span>
+
+                    <h6 class="d-none d-lg-inline-block ms-lg-3 me-lg-3">Stats</h6>
                     
                 </div>
     
                 <div>
 
-                    <h6>Signals</h6>
+                    <span><i class="fa-solid fa-signal ms-sm-1 ms-lg-0"></i></span>
+
+                    <h6 class="d-none d-lg-inline-block ms-lg-2 me-lg-3">Signals</h6>
                     
                 </div>
     
                 <div class="admin">
 
-                    <h6>Admin</h6>
+                    <span><i class="fa-solid fa-gear ms-sm-1 ms-lg-0"></i></span>
+
+                    <h6 class="d-none d-lg-inline-block ms-lg-3 me-lg-3">Admin</h6>
                     
                 </div>
 
@@ -132,28 +151,185 @@
 
                 <div class="row  main-header">
 
-                    <div class="col-6">
-                        1
+                    <div class="col-12 col-md-6 order-sm-1 order-md-0">
+                        LEFT
                     </div>
 
-                    <div class="col-3">
-                        2
+                    <div class="col-12 col-md-3 order-sm-2 order-md-1">
+                        CENTER
                     </div>
 
-                    <div class="col-3">
-                        3
+                    <div class="col-12 col-md-3 order-sm-0 order-md-2">
+                        RIGHT
                     </div>
 
                 </div>
 
                 <div class="row">
 
-                    <div class="col-8">
-                        LEFT
+                    <div class="col-12 col-lg-8">
+                        
+                        <div class="row">
+
+                            <!--TABLE-->
+
+                            <div class="col-12">
+
+                                <div class="card mt-3">
+
+                                    <div class="card-header bg-body-secondary">
+
+                                        <h6>Prossime Classi</h6> 
+
+                                    </div>
+
+                                    <table class="table table-hover">
+
+                                        <thead>
+
+                                            <tr>
+
+                                                <th scope="col" class="fw-normal w-50">Nome</th>
+                                                <th scope="col" class="fw-normal d-none d-lg-table-cell">Data Inizio</th>
+                                                <th scope="col" class="fw-normal d-none d-lg-table-cell">ROI</th>
+                                                <th scope="col" class="fw-normal">Stato</th>
+                                                <th scope="col" class="fw-normal">Azioni</th>
+
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody>
+
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td>@mdo</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>@mdo</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry the Bird</td>
+                                                <td>@twitter</td>
+                                                <td>@mdo</td>
+                                                <td>@mdo</td>
+                                            </tr>
+
+                                        </tbody>
+
+                                      </table>
+
+
+                                    
+                                </div>
+
+                            </div>
+
+
+                            <!--FAQ-->
+
+                            <div class="col-12">
+
+                                 <div class="card mt-3">
+
+                                    <div class="card-header bg-body-secondary">
+
+                                        <h6>F.A.Q.</h6> 
+
+                                    </div>
+
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                              Accordion Item #1
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              Accordion Item #2
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              Accordion Item #3
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="col-4">
-                        RIGHT
+                    <div class="col-12 col-lg-4">
+                        
+                        <div class="row">
+
+                            <div class="col-12">
+
+                                <div class="card mt-3">
+
+                                    <div class="card-header bg-body-secondary">
+
+                                        <h6>Prossime Classi</h6> 
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <div class="card mt-3">
+
+                                    <div class="card-header bg-body-secondary">
+
+                                        <h6>Prossime Classi</h6> 
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
                     </div>
 
                 </div>

@@ -8,6 +8,11 @@ ___________________*/
     height: 60px;
 }
 
+.mobile-logo {
+    max-width: 3.125rem;
+    min-width: 3.125rem
+    
+}
 
 /*_________________
     
@@ -34,6 +39,7 @@ aside > * {
 #overflow-main{
     height: calc(100vh - 3.75rem);
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .main-header {
@@ -51,10 +57,3 @@ aside > * {
     DEBUG
 ___________________*/
 
-.debug aside {
-    
-}
-
-.debug #overflow-main {
-    background-color: aquamarine;
-}
