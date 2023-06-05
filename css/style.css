@@ -1,0 +1,60 @@
+
+/*_________________
+    
+    NAV
+___________________*/
+
+.navbar {
+    height: 60px;
+}
+
+
+/*_________________
+    
+    MAIN
+___________________*/
+
+aside {
+    height: calc(100vh - 3.75rem);
+    position: relative;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
+}
+
+aside > * {
+    margin-bottom: .9375rem;
+}
+
+.admin {
+    position: absolute;
+    bottom: 0;
+    
+}
+
+#overflow-main{
+    height: calc(100vh - 3.75rem);
+    overflow-y: scroll;
+}
+
+.main-header {
+    background-color: #1B72E8;
+}
+
+
+
+
+
+
+
+/*_________________
+    
+    DEBUG
+___________________*/
+
+.debug aside {
+    
+}
+
+.debug #overflow-main {
+    background-color: aquamarine;
+}
