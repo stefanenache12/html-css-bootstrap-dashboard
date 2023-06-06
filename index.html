@@ -34,7 +34,6 @@
 
     <body class="debug">
 
-
         <!--NAV-->
 
         <nav class="navbar navbar-expand-lg bg-light bg-opacity-0">
@@ -149,18 +148,203 @@
 
                 <!--MAIN HEADER-->
 
-                <div class="row  main-header">
+                <div class="row  main-header pt-3 pe-2 pb-3 ps-2 text-light">
 
-                    <div class="col-12 col-md-6 order-sm-1 order-md-0">
-                        LEFT
+                    <div class="col-12 col-md-4 col-lg-6 pb-3 order-sm-1 order-md-0">
+                        
+                        <div>
+
+                            <h3 class="d-inline-block">Boolean</h3>
+
+                            <h6 class="d-inline-block">
+
+                            <span class="badge rounded-pill badge-bg">Piano Blaze</span>
+
+                            </h6>
+
+                        </div>
+
+                        <div>
+
+                            <h6 class="d-inline-block">
+
+                                <span class="badge rounded-pill badge-bg"> 3 App</span>
+    
+                            </h6>
+
+                            <i class="fa-solid fa-angles-right align-middle fs-6"></i>
+
+                            <h6 class="d-inline-block">
+
+                                <span class="badge rounded-pill badge-bg d-lg-none">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+    
+                            </h6>
+
+                            <h6 class="d-inline-block">
+
+                                <span class="badge rounded-pill badge-bg d-none d-lg-inline"> Boolean Mobile App</span>
+    
+                            </h6>
+
+                            <h6 class="d-inline-block">
+
+                                <span class="badge rounded-pill badge-bg d-none d-lg-inline"> Boolean Web App</span>
+    
+                            </h6>
+
+                            <h6 class="d-inline-block">
+
+                                <span class="badge rounded-pill badge-bg d-none d-lg-inline"> Boolean Blog App</span>
+    
+                            </h6>
+
+                        </div>
+
+
                     </div>
 
-                    <div class="col-12 col-md-3 order-sm-2 order-md-1">
-                        CENTER
+                    <div class="col-12 col-md-4 col-lg-3 pb-3 order-sm-2 order-md-1">
+                        
+                        <h6>Studenti online negli ultimi 30 minuti</h6>
+
+                        <h4 class="pt-xl-2">125</h4>
+
                     </div>
 
-                    <div class="col-12 col-md-3 order-sm-0 order-md-2">
-                        RIGHT
+                    <div class=" d-flex justify-content-lg-end align-items-center pe-5 col-12 col-md-4 col-lg-3 pb-3 order-sm-0 order-md-2">
+                        
+                        <h6 class="d-inline-block me-3">Nuovo Studente</h6>
+
+                        <!--OFFCANVAS-->
+
+                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <i class="fa-solid fa-plus"></i> </button>
+
+                        <div class="offcanvas offcanvas-end OFF" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel"> Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body">
+
+                                <form action="">
+                                
+                                    <div class="row">
+
+                                        <div class="col">
+                                            <label for=""> Nome</label>
+                                            <input type="text" class="form-control" aria-label="First name">
+                                        </div>
+
+                                        <div class="col">
+                                            <label for=""> Cognome</label>
+                                            <input type="text" class="form-control" aria-label="Last name">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mt-4">
+
+                                        <div class="col mb-3">
+                                            <label for="basic-url" class="form-label p-0 m-0">Email</label>
+                                            <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon3">@</span>
+                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                            </div>
+                                            <div class="form-text" id="basic-addon4"></div>
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <label for=""> Password</label>
+                                            <input type="text" class="form-control" aria-label="Password">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col mb-3">
+                                            <label for="basic-url" class="form-label p-0 m-0">Indirizzo Email</label>
+                                            <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon3">@</span>
+                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                            </div>
+                                            <div class="form-text" id="basic-addon4"></div>
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <label for=""> Password</label>
+                                            <input type="text" class="form-control" aria-label="Password">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col">
+                                            <label for=""> Indirizzo</label>
+                                            <input type="text" class="form-control" aria-label="Indirizzo">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mt-3">
+
+                                        <div class="col">
+                                            <label for=""> Città </label>
+                                            <input type="text" class="form-control" aria-label="Città">
+                                        </div>
+
+                                        <div class="col">
+                                            <label for=""> Stato </label>
+                                            <select class="col form-select h-auto" aria-label="Default select example">
+                                                <option selected>Scegli..</option>
+                                                <option value="1">Italia</option>
+                                                <option value="2">Francia</option>
+                                                <option value="4">Spagna</option>
+                                                <option value="5">Romania</option>
+                                                <option value="6">Germania</option>
+                                                <option value="7">Stati Uniti</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <label for=""> CAP </label>
+                                            <input type="text" class="form-control" aria-label="CAP">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col mb-3">
+                                            <label for="formFile" class="form-label">Foto</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3 ps-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Seleziona per proseguire
+                                            </label>
+                                          </div>
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <button class="btn btn-primary" type="submit">Salva</button>
+                                        <button class="btn btn-warning ms-3" type="submit">Svuota</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+                      
                     </div>
 
                 </div>
