@@ -32,7 +32,7 @@
 
     <!--BODY-->
 
-    <body class="debug">
+    <body>
 
         <!--NAV-->
 
@@ -110,7 +110,7 @@
 
             <aside class="col-auto d-flex flex-column text-light pt-4 pb-4 ps-4 pe-4">
 
-                <div>
+                <div class="asside-hover">
 
                     <span style="min-width: 1.25rem;"> <i class="fa-solid fa-house ms-sm-1 ms-lg-0"></i> </span>
 
@@ -118,7 +118,7 @@
                     
                 </div>
     
-                <div>
+                <div class="asside-hover">
 
                     <span style="min-width: 1.25rem;"><i class="fa-solid fa-chart-simple ms-sm-1 ms-lg-0"></i></span>
 
@@ -126,7 +126,7 @@
                     
                 </div>
     
-                <div>
+                <div class="asside-hover">
 
                     <span><i class="fa-solid fa-signal ms-sm-1 ms-lg-0"></i></span>
 
@@ -134,7 +134,7 @@
                     
                 </div>
     
-                <div class="admin">
+                <div class="admin asside-hover">
 
                     <span><i class="fa-solid fa-gear ms-sm-1 ms-lg-0"></i></span>
 
@@ -148,7 +148,9 @@
 
                 <!--MAIN HEADER-->
 
-                <div class="row  main-header pt-3 pe-2 pb-3 ps-2 text-light">
+                <div class="row main-header pt-3 pe-2 pb-3 ps-2 text-light">
+
+                    <!--LEFT-->
 
                     <div class="col-12 col-md-4 col-lg-6 pb-3 order-sm-1 order-md-0">
                         
@@ -202,8 +204,9 @@
 
                         </div>
 
-
                     </div>
+
+                    <!--CENTER-->
 
                     <div class="col-12 col-md-4 col-lg-3 pb-3 order-sm-2 order-md-1">
                         
@@ -213,7 +216,9 @@
 
                     </div>
 
-                    <div class=" d-flex justify-content-lg-end align-items-center pe-5 col-12 col-md-4 col-lg-3 pb-3 order-sm-0 order-md-2">
+                    <!--RIGHT-->
+
+                    <div class="d-flex justify-content-lg-end align-items-center pe-5 col-12 col-md-4 col-lg-3 pb-3 order-sm-0 order-md-2">
                         
                         <h6 class="d-inline-block me-3">Nuovo Studente</h6>
 
@@ -224,8 +229,11 @@
                         <div class="offcanvas offcanvas-end OFF" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 
                             <div class="offcanvas-header">
+                               
                                 <h5 class="offcanvas-title" id="offcanvasRightLabel"> Inserisci un nuovo studente</h5>
+                               
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                           
                             </div>
 
                             <div class="offcanvas-body">
@@ -235,13 +243,19 @@
                                     <div class="row">
 
                                         <div class="col">
+                                            
                                             <label for=""> Nome</label>
+                                            
                                             <input type="text" class="form-control" aria-label="First name">
+                                       
                                         </div>
 
                                         <div class="col">
+                                            
                                             <label for=""> Cognome</label>
+                                            
                                             <input type="text" class="form-control" aria-label="Last name">
+                                       
                                         </div>
 
                                     </div>
@@ -249,17 +263,27 @@
                                     <div class="row mt-4">
 
                                         <div class="col mb-3">
+                                            
                                             <label for="basic-url" class="form-label p-0 m-0">Email</label>
+                                            
                                             <div class="input-group">
-                                            <span class="input-group-text" id="basic-addon3">@</span>
+                                            
+                                                <span class="input-group-text" id="basic-addon3">@</span>
+                                            
                                             <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-                                            </div>
+                                            
+                                        </div>
+                                           
                                             <div class="form-text" id="basic-addon4"></div>
+                                        
                                         </div>
                                         
                                         <div class="col">
+                                            
                                             <label for=""> Password</label>
+                                            
                                             <input type="text" class="form-control" aria-label="Password">
+                                        
                                         </div>
 
                                     </div>
@@ -267,17 +291,27 @@
                                     <div class="row">
 
                                         <div class="col mb-3">
+                                            
                                             <label for="basic-url" class="form-label p-0 m-0">Indirizzo Email</label>
+                                            
                                             <div class="input-group">
-                                            <span class="input-group-text" id="basic-addon3">@</span>
-                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                               
+                                                <span class="input-group-text" id="basic-addon3">@</span>
+                                                
+                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                           
                                             </div>
+                                            
                                             <div class="form-text" id="basic-addon4"></div>
+                                        
                                         </div>
                                         
                                         <div class="col">
+                                            
                                             <label for=""> Password</label>
+                                            
                                             <input type="text" class="form-control" aria-label="Password">
+                                        
                                         </div>
 
                                     </div>
@@ -285,8 +319,11 @@
                                     <div class="row">
 
                                         <div class="col">
+                                            
                                             <label for=""> Indirizzo</label>
+                                            
                                             <input type="text" class="form-control" aria-label="Indirizzo">
+                                        
                                         </div>
 
                                     </div>
@@ -294,49 +331,80 @@
                                     <div class="row mt-3">
 
                                         <div class="col">
+                                            
                                             <label for=""> Città </label>
+                                            
                                             <input type="text" class="form-control" aria-label="Città">
+                                        
                                         </div>
 
                                         <div class="col">
+                                            
                                             <label for=""> Stato </label>
+                                            
                                             <select class="col form-select h-auto" aria-label="Default select example">
+                                                
                                                 <option selected>Scegli..</option>
+                                                
                                                 <option value="1">Italia</option>
+                                                
                                                 <option value="2">Francia</option>
+                                                
                                                 <option value="4">Spagna</option>
+                                                
                                                 <option value="5">Romania</option>
+                                                
                                                 <option value="6">Germania</option>
+                                                
                                                 <option value="7">Stati Uniti</option>
+                                           
                                             </select>
+                                       
                                         </div>
                                         
                                         <div class="col">
+                                            
                                             <label for=""> CAP </label>
+                                            
                                             <input type="text" class="form-control" aria-label="CAP">
                                         </div>
 
                                     </div>
 
                                     <div class="row mt-3">
+                                        
                                         <div class="col mb-3">
+                                            
                                             <label for="formFile" class="form-label">Foto</label>
+                                            
                                             <input class="form-control" type="file" id="formFile">
+                                        
                                         </div>
+                                    
                                     </div>
 
                                     <div class="row mt-3 ps-3">
+                                        
                                         <div class="form-check">
+                                            
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            
                                             <label class="form-check-label" for="flexCheckDefault">
-                                              Seleziona per proseguire
+                                              
+                                                Seleziona per proseguire
+                                            
                                             </label>
-                                          </div>
+                                        
+                                        </div>
+                                    
                                     </div>
 
                                     <div class="mt-3">
+                                        
                                         <button class="btn btn-primary" type="submit">Salva</button>
+                                        
                                         <button class="btn btn-warning ms-3" type="submit">Svuota</button>
+                                    
                                     </div>
 
                                 </form>
@@ -349,10 +417,14 @@
 
                 </div>
 
+                <!--MAIN SECTION-->
+
                 <div class="row">
 
-                    <div class="col-12 col-lg-8">
-                        
+                    <!-- LEFT COL MAIN SECTION-->
+
+                    <div class="col-12 col-lg-8 ps-4">
+
                         <div class="row">
 
                             <!--TABLE-->
@@ -373,11 +445,15 @@
 
                                             <tr>
 
-                                                <th scope="col" class="fw-normal w-50">Nome</th>
-                                                <th scope="col" class="fw-normal d-none d-lg-table-cell">Data Inizio</th>
-                                                <th scope="col" class="fw-normal d-none d-lg-table-cell">ROI</th>
-                                                <th scope="col" class="fw-normal">Stato</th>
-                                                <th scope="col" class="fw-normal">Azioni</th>
+                                                <th scope="col" class="w-25 first-col-table">Nome</th>
+                                                
+                                                <th scope="col" class="d-none d-lg-table-cell text-center">Data Inizio</th>
+                                                
+                                                <th scope="col" class="d-none d-lg-table-cell text-center">ROI</th>
+                                                
+                                                <th scope="col" class="text-center">Stato</th>
+                                                
+                                                <th scope="col" class="text-center">Azioni</th>
 
                                             </tr>
 
@@ -385,33 +461,339 @@
 
                                         <tbody>
 
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                                <td>@mdo</td>
+                                            <tr class="align-middle">
+                                                <th scope="row" class="fw-normal">
+                                                    
+                                                    <div style="max-width: 1.25rem;" class="d-inline-block align-top">
+                                                        
+                                                        <img src="./img/class-avatar.jpg" alt="" class="w-100">
+                                                    
+                                                    </div>
+
+                                                    Classe 75
+
+                                                </th>
+
+                                                <td class="text-center d-none d-lg-table-cell"> 15 Feb 2023</td>
+
+                                                <td class="text-center d-none d-lg-table-cell">20%</td>
+
+                                                <td class="text-center">
+                                                    
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
+                                                
+                                                </td>
+
+                                                <td class="text-center">
+
+                                                    <button type="button" class="btn btn-outline-dark">
+
+                                                        <i class="fa-solid fa-pen"></i>
+
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        
+                                                        <i class="fa-solid fa-trash"></i>
+
+                                                    </button>
+
+                                                </td>
+
                                             </tr>
 
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                                <td>@mdo</td>
+                                            <tr class="align-middle">
+                                                <th scope="row" class="fw-normal">
+                                                    
+                                                    <div style="max-width: 1.25rem;" class="d-inline-block align-top">
+                                                        
+                                                        <img src="./img/class-avatar.jpg" alt="" class="w-100">
+                                                    
+                                                    </div>
+
+                                                    Classe 76
+
+                                                </th>
+
+                                                <td class="text-center d-none d-lg-table-cell"> 16 Feb 2023</td>
+
+                                                <td class="text-center d-none d-lg-table-cell">20%</td>
+
+                                                <td class="text-center">
+                                                    
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
+                                                
+                                                </td>
+
+                                                <td class="text-center">
+
+                                                    <button type="button" class="btn btn-outline-dark">
+
+                                                        <i class="fa-solid fa-pen"></i>
+
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        
+                                                        <i class="fa-solid fa-trash"></i>
+
+                                                    </button>
+
+                                                </td>
+
                                             </tr>
 
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>@mdo</td>
-                                                <td>@mdo</td>
+                                            <tr class="align-middle">
+                                                <th scope="row" class="fw-normal">
+                                                    
+                                                    <div style="max-width: 1.25rem;" class="d-inline-block align-top">
+                                                        
+                                                        <img src="./img/class-avatar.jpg" alt="" class="w-100">
+                                                    
+                                                    </div>
+
+                                                    Classe 77
+
+                                                </th>
+
+                                                <td class="text-center d-none d-lg-table-cell"> 17 Feb 2023</td>
+
+                                                <td class="text-center d-none d-lg-table-cell">20%</td>
+
+                                                <td class="text-center">
+                                                    
+                                                    <span class="badge rounded-pill text-bg-warning">Process</span>
+                                                
+                                                </td>
+
+                                                <td class="text-center">
+
+                                                    <button type="button" class="btn btn-outline-dark">
+
+                                                        <i class="fa-solid fa-pen"></i>
+
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        
+                                                        <i class="fa-solid fa-trash"></i>
+
+                                                    </button>
+
+                                                </td>
+
                                             </tr>
+
+                                            <tr class="align-middle">
+                                                <th scope="row" class="fw-normal">
+                                                    
+                                                    <div style="max-width: 1.25rem;" class="d-inline-block align-top">
+                                                        
+                                                        <img src="./img/class-avatar.jpg" alt="" class="w-100">
+                                                    
+                                                    </div>
+
+                                                    Classe 78
+
+                                                </th>
+
+                                                <td class="text-center d-none d-lg-table-cell"> 18 Feb 2023</td>
+
+                                                <td class="text-center d-none d-lg-table-cell">20%</td>
+
+                                                <td class="text-center">
+                                                    
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
+                                                
+                                                </td>
+
+                                                <td class="text-center">
+
+                                                    <button type="button" class="btn btn-outline-dark">
+
+                                                        <i class="fa-solid fa-pen"></i>
+
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        
+                                                        <i class="fa-solid fa-trash"></i>
+
+                                                    </button>
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr class="align-middle">
+                                                <th scope="row" class="fw-normal">
+                                                    
+                                                    <div style="max-width: 1.25rem;" class="d-inline-block align-top">
+                                                        
+                                                        <img src="./img/class-avatar.jpg" alt="" class="w-100">
+                                                    
+                                                    </div>
+
+                                                    Classe 79
+
+                                                </th>
+
+                                                <td class="text-center d-none d-lg-table-cell"> 19 Feb 2023</td>
+
+                                                <td class="text-center d-none d-lg-table-cell">20%</td>
+
+                                                <td class="text-center">
+                                                    
+                                                    <span class="badge rounded-pill text-bg-danger">Failed</span>
+                                                
+                                                </td>
+
+                                                <td class="text-center">
+
+                                                    <button type="button" class="btn btn-outline-dark">
+
+                                                        <i class="fa-solid fa-pen"></i>
+
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        
+                                                        <i class="fa-solid fa-trash"></i>
+
+                                                    </button>
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr class="align-middle">
+                                                <th scope="row" class="fw-normal">
+                                                    
+                                                    <div style="max-width: 1.25rem;" class="d-inline-block align-top">
+                                                        
+                                                        <img src="./img/class-avatar.jpg" alt="" class="w-100">
+                                                    
+                                                    </div>
+
+                                                    Classe 80
+
+                                                </th>
+
+                                                <td class="text-center d-none d-lg-table-cell"> 20 Feb 2023</td>
+
+                                                <td class="text-center d-none d-lg-table-cell">20%</td>
+
+                                                <td class="text-center">
+                                                    
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
+                                                
+                                                </td>
+
+                                                <td class="text-center">
+
+                                                    <button type="button" class="btn btn-outline-dark">
+
+                                                        <i class="fa-solid fa-pen"></i>
+
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        
+                                                        <i class="fa-solid fa-trash"></i>
+
+                                                    </button>
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr class="align-middle">
+                                                <th scope="row" class="fw-normal">
+                                                    
+                                                    <div style="max-width: 1.25rem;" class="d-inline-block align-top">
+                                                        
+                                                        <img src="./img/class-avatar.jpg" alt="" class="w-100">
+                                                    
+                                                    </div>
+
+                                                    Classe 81
+
+                                                </th>
+
+                                                <td class="text-center d-none d-lg-table-cell"> 21 Feb 2023</td>
+
+                                                <td class="text-center d-none d-lg-table-cell">20%</td>
+
+                                                <td class="text-center">
+                                                    
+                                                    <span class="badge rounded-pill text-bg-danger">Failed</span>
+                                                
+                                                </td>
+
+                                                <td class="text-center">
+
+                                                    <button type="button" class="btn btn-outline-dark">
+
+                                                        <i class="fa-solid fa-pen"></i>
+
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        
+                                                        <i class="fa-solid fa-trash"></i>
+
+                                                    </button>
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr class="align-middle">
+                                                <th scope="row" class="fw-normal">
+                                                    
+                                                    <div style="max-width: 1.25rem;" class="d-inline-block align-top">
+                                                        
+                                                        <img src="./img/class-avatar.jpg" alt="" class="w-100">
+                                                    
+                                                    </div>
+
+                                                    Classe 82
+
+                                                </th>
+
+                                                <td class="text-center d-none d-lg-table-cell"> 22 Feb 2023</td>
+
+                                                <td class="text-center d-none d-lg-table-cell">20%</td>
+
+                                                <td class="text-center">
+                                                    
+                                                    <span class="badge rounded-pill text-bg-success">Done</span>
+                                                
+                                                </td>
+
+                                                <td class="text-center">
+
+                                                    <button type="button" class="btn btn-outline-dark">
+
+                                                        <i class="fa-solid fa-pen"></i>
+
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-outline-dark">
+                                                        
+                                                        <i class="fa-solid fa-trash"></i>
+
+                                                    </button>
+
+                                                </td>
+
+                                            </tr>
+
+                                            
 
                                         </tbody>
 
-                                      </table>
+                                    </table>
 
 
                                     
@@ -419,12 +801,11 @@
 
                             </div>
 
-
                             <!--FAQ-->
 
                             <div class="col-12">
 
-                                 <div class="card mt-3">
+                                <div class="card mt-3 mb-5">
 
                                     <div class="card-header bg-body-secondary">
 
@@ -433,43 +814,80 @@
                                     </div>
 
                                     <div class="accordion" id="accordionExample">
+
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              Accordion Item #1
-                                            </button>
-                                          </h2>
-                                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                                            <h2 class="accordion-header">
+
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                
+                                                    Come aggiungere un nuovo studente?
+                                                    
+                                                </button>
+
+                                            </h2>
+
+                                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                
+                                                <div class="accordion-body">
+                                                    
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                
+                                                </div>
+
                                             </div>
-                                          </div>
+
                                         </div>
+
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              Accordion Item #2
-                                            </button>
-                                          </h2>
-                                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                                            <h2 class="accordion-header">
+                                                
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    
+                                                    Come posso accedere alle informazioni del mio account?
+                                                
+                                                </button>
+                                            
+                                            </h2>
+
+                                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                
+                                                <div class="accordion-body">
+                                                    
+                                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                
+                                                </div>
+                                           
                                             </div>
-                                          </div>
+
                                         </div>
+
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                              Accordion Item #3
-                                            </button>
-                                          </h2>
-                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                                            <h2 class="accordion-header">
+
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    
+                                                    Posso usare questa dashboard da mobile?                                          
+                                                
+                                                </button>
+                                           
+                                            </h2>
+
+                                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                               
+                                                <div class="accordion-body">
+                                                    
+                                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                
+                                                </div>
+                                            
                                             </div>
-                                          </div>
+
                                         </div>
-                                      </div>
+
+                                    </div>
 
                                 </div>
                                 
@@ -479,7 +897,9 @@
 
                     </div>
 
-                    <div class="col-12 col-lg-4">
+                    <!-- RIGHT COL MAIN SECTION-->
+
+                    <div class="col-12 col-lg-4 pe-3">
                         
                         <div class="row">
 

@@ -1,6 +1,6 @@
 
 /*_________________
-    
+
     NAV
 ___________________*/
 
@@ -10,13 +10,13 @@ ___________________*/
 
 .mobile-logo {
     max-width: 3.125rem;
-    min-width: 3.125rem
-    
+    min-width: 3.125rem    
 }
+
 
 /*_________________
     
-    MAIN
+    ASIDE
 ___________________*/
 
 aside {
@@ -30,11 +30,37 @@ aside > * {
     margin-bottom: .9375rem;
 }
 
+.asside-hover:hover {
+    background-color: rgba(240, 248, 255, 0.466);
+    cursor: pointer;
+}
+
 .admin {
     position: absolute;
     bottom: 0;
-    
 }
+
+
+/*_________________
+    
+    HEADER MAIN
+___________________*/
+
+.badge-bg {
+    background-color: #165BBA;
+}
+
+.badge:hover {
+    background: rgba(22, 91, 186, 0.5);
+    cursor: pointer;
+}
+
+
+
+/*_________________
+    
+     MAIN
+___________________*/
 
 #overflow-main{
     height: calc(100vh - 3.75rem);
@@ -46,14 +72,26 @@ aside > * {
     background-color: #1B72E8;
 }
 
+.offcanvas {
+    --bs-offcanvas-width: 40.625rem;
+}
 
-
-
-
+.btn-outline-dark {
+    --bs-btn-color: #6c757d;
+    --bs-btn-border-color: #6c757d;
+    --bs-btn-hover-bg: #198754;
+    --bs-btn-active-bg: #198754;
+}
 
 
 /*_________________
     
-    DEBUG
+    RESPONSIVE
 ___________________*/
 
+@media all and (max-width: 768px) {
+
+    .offcanvas {
+        --bs-offcanvas-width: 100%;
+    }
+}
