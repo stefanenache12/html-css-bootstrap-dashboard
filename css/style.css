@@ -13,6 +13,14 @@ ___________________*/
     min-width: 3.125rem    
 }
 
+.form-control {
+    background-color: #E9ECEF;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -10rem;  
+}
+
 
 /*_________________
     
@@ -83,6 +91,19 @@ ___________________*/
     --bs-btn-active-bg: #198754;
 }
 
+.form-check {
+    margin-bottom: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: initial;
+    background-color: initial;
+}
+
+#first-col-table {
+    width: 50%;
+}
+
 
 /*_________________
     
@@ -93,5 +114,13 @@ ___________________*/
 
     .offcanvas {
         --bs-offcanvas-width: 100%;
+    }
+
+}
+
+@media all and (max-width: 1200px) {
+
+    #first-col-table {
+        width: 25%;
     }
 }
